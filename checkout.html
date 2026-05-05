@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Na's Visual Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-checkout">
+
+<nav class="navbar">
+        <a href="indexx.html" class="logo">NA'S VISUAL ARCHIVE</a>
+        <ul class="nav-links">
+            <li><a href="indexx.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="nadya.html">SHOP</a></li>
+            <li><a href="orderlist.html">PESANAN</a></li>
+            <li><a href="checkout.html">CHECKOUT</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
+        </ul>
+        <div class="cart-icon">🛒 <span class="cart-badge" id="cart-badge">0</span></div>
+    </nav>
+
+<div class="checkout-wrapper">
+    <div class="header"><h2>💳 CHECKOUT & PEMBAYARAN</h2><p style="font-size:0.7rem; opacity:0.7;">Lengkapi data untuk melanjutkan pesanan</p></div>
+    <div class="content">
+        <div class="form-group"><label>Nama Lengkap</label><input type="text" id="fullname" placeholder="Contoh: Na Jaemin"></div>
+        <div class="form-group"><label>Nomor WhatsApp</label><input type="text" id="phone" placeholder="08xxxxxxxx"></div>
+        <div class="form-group"><label>Alamat Lengkap</label><textarea id="address" rows="2" placeholder="Jalan, Kecamatan, Kota, Kode Pos"></textarea></div>
+        <div class="form-group"><label>Metode Pembayaran</label><select id="paymentMethod"><option value="BCA">BCA Transfer</option><option value="DANA">DANA / Gopay</option><option value="Mandiri">Mandiri Virtual Account</option></select></div>
+
+        <div class="cart-summary"><h4 style="margin-bottom:12px;">🛍️ Ringkasan Pesanan</h4><div id="checkout-cart-list"></div><div class="total-bayar" id="checkout-total">Rp 0</div></div>
+
+        <div class="btn-group"><button class="btn-secondary" onclick="window.location.href='nadya.html'">← Kembali ke Toko</button><button class="btn-primary" id="proceedBtn">Buat Pesanan & Tampilkan Struk</button></div>
+        <div id="strukContainer" style="display:none;">
+            <button class="struk-close" onclick="document.getElementById('strukContainer').style.display='none'">✕</button>
+            <div class="struk-area">
+                <div style="text-align:center;">
+                    <h3>NA'S VISUAL ARCHIVE</h3>
+                    <p style="font-size:0.6rem;">OFFICIAL RECEIPT</p>
+                </div>
+                <div id="receiptData"></div>
+                <div id="paymentInstruction"></div>
+                <div class="admin-panel">
+                    <p style="font-size:0.7rem; font-weight:bold;">🔐 ADMIN KONFIRMASI</p>
+                    <button id="confirmPayBtn" class="btn-primary" style="background:#27ae60; margin-top:10px;">✅ Konfirmasi Pembayaran</button>
+                    <div id="orderStatusMsg" style="margin-top:12px; font-size:0.7rem;"></div>
+                </div>
+            </div>
+        </div>>
+    </div>
+
+    <div id="global-toast" class="toast-notif"></div>
+        <script src="app.js" defer></script>
+</body>
+</html>

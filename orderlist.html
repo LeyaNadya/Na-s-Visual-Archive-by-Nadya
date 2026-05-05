@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pesanan | Na's Visual Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-orderlist">
+
+    <nav class="navbar">
+        <a href="indexx.html" class="logo">NA'S VISUAL ARCHIVE</a>
+        <ul class="nav-links">
+            <li><a href="indexx.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="nadya.html">SHOP</a></li>
+            <li><a href="orderlist.html">PESANAN</a></li>
+            <li><a href="checkout.html">CHECKOUT</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
+        </ul>
+        <div class="cart-icon">🛒 <span class="cart-badge" id="cart-badge">0</span></div>
+    </nav>
+
+    <div class="container">
+        <div class="header"><h1>📋 DAFTAR PESANAN</h1><p style="font-size:0.8rem; color:#777;">Kelola pesanan & lihat status terbaru</p></div>
+        <div id="ordersList"></div>
+        <div class="nav-links-bottom"><a href="nadya.html">🏠 Kembali ke Toko</a> | <a href="checkout.html">🛒 Lanjut Checkout</a></div>
+    </div>
+
+    <div id="global-toast" class="toast-notif"></div>
+    <script src="app.js" defer></script>
+</body>
+</html>

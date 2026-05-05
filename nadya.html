@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Na's Visual Archive | Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-shop">
+
+    <div class="music-bar">
+        <span>♫ ATMOSPHERE</span>
+        <audio autoplay loop controls>
+            <source src="instrumen.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <nav class="navbar">
+            <a href="indexx.html" class="logo">NA'S VISUAL ARCHIVE</a>
+            <ul class="nav-links">
+                <li><a href="indexx.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="nadya.html">SHOP</a></li>
+                <li><a href="orderlist.html">PESANAN</a></li>
+                <li><a href="checkout.html">CHECKOUT</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+            </ul>
+            <div class="cart-icon">🛒 <span class="cart-badge" id="cart-badge">0</span></div>
+        </nav>
+
+<div class="sub-nav">
+    <input type="text" id="search" class="search-bar" placeholder="Cari produk..." onkeyup="searchFn()">
+    <div class="cat-filter">
+        <a href="#scent">Scent</a> • <a href="#apparel">Apparel</a> • <a href="#stationery">Stationery</a> • <a href="#collect">Collectibles</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="catalog">
+
+        <!-- ========== SCENT SERIES ========== -->
+        <h2 id="scent" class="section-title">SCENT SERIES</h2>
+        <div class="grid">
+
+            <!-- p1: Parfum Set -->
+            <div class="p-item" data-name="parfum set" data-id="p1">
+                <input type="checkbox" id="p1" class="db-check">
+                <label for="p1" class="card">
+                    <div class="img-box">
+                        <img src="parfumset1.png" alt="Parfum Set" id="img-p1">
+                        <button class="slider-btn slider-left" data-id="p1" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p1" data-dir="next">❯</button>
+                        <span class="badge-label badge-laris">🔥 Laris</span>
+                    </div>
+                    <div class="info">
+                        <h3>Parfum Set</h3>
+                        <span class="price">Rp 850.000</span>
+                        <div class="rating">★★★★★ 4.9</div>
+                        <div class="stock-info" id="stock-p1">📦 Stok: 52</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p1">
+                                <option value="Scent 01">Scent 01</option>
+                                <option value="Scent 02">Scent 02</option>
+                            </select>
+                            <input type="number" id="qty-p1" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p1')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p1">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+
+            <!-- p2: Scented Candle -->
+            <div class="p-item" data-name="scented candle" data-id="p2">
+                <input type="checkbox" id="p2" class="db-check">
+                <label for="p2" class="card">
+                    <div class="img-box">
+                        <img src="candle.png" alt="Scented Candle" id="img-p2">
+                        <button class="slider-btn slider-left" data-id="p2" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p2" data-dir="next">❯</button>
+                        <span class="badge-label badge-laris">🔥 Laris</span>
+                    </div>
+                    <div class="info">
+                        <h3>Scented Candle</h3>
+                        <span class="price">Rp 210.000</span>
+                        <div class="rating">★★★★☆ 4.8</div>
+                        <div class="stock-info" id="stock-p2">📦 Stok: 42</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p2">
+                                <option value="Citrus">Citrus</option>
+                                <option value="Musk">Musk</option>
+                                <option value="Chypre">Chypre</option>
+                            </select>
+                            <input type="number" id="qty-p2" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p2')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p2">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!-- ========== APPAREL ========== -->
+        <h2 id="apparel" class="section-title">APPAREL</h2>
+        <div class="grid">
+
+            <!-- p3: Hoodie Black Edition -->
+            <div class="p-item" data-name="hoodie black" data-id="p3">
+                <input type="checkbox" id="p3" class="db-check">
+                <label for="p3" class="card">
+                    <div class="img-box">
+                        <img src="hoodie b.png" alt="Hoodie Black" id="img-p3">
+                        <button class="slider-btn slider-left" data-id="p3" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p3" data-dir="next">❯</button>
+                    </div>
+                    <div class="info">
+                        <h3>Hoodie Black Edition</h3>
+                        <span class="price">Rp 750.000</span>
+                        <div class="rating">★★★★☆ 4.7</div>
+                        <div class="stock-info" id="stock-p3">📦 Stok: 38</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p3">
+                                <option value="Size S">Size S</option>
+                                <option value="Size M">Size M</option>
+                                <option value="Size L">Size L</option>
+                                <option value="Size XL">Size XL</option>
+                            </select>
+                            <input type="number" id="qty-p3" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p3')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p3">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+
+            <!-- p4: Ball Cap Visual -->
+            <div class="p-item" data-name="ball cap" data-id="p4">
+                <input type="checkbox" id="p4" class="db-check">
+                <label for="p4" class="card">
+                    <div class="img-box">
+                        <img src="ball cap 1.png" alt="Ball Cap" id="img-p4">
+                        <button class="slider-btn slider-left" data-id="p4" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p4" data-dir="next">❯</button>
+                    </div>
+                    <div class="info">
+                        <h3>Ball Cap Visual</h3>
+                        <span class="price">Rp 225.000</span>
+                        <div class="rating">★★★★☆ 4.6</div>
+                        <div class="stock-info" id="stock-p4">📦 Stok: 28</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p4">
+                                <option value="Gray">Gray</option>
+                                <option value="Soft Pink">Soft Pink</option>
+                            </select>
+                        <input type="number" id="qty-p4" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p4')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p4">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+
+            <!-- p5: Eco Bag Archive -->
+            <div class="p-item" data-name="eco bag" data-id="p5">
+                <input type="checkbox" id="p5" class="db-check">
+                <label for="p5" class="card">
+                    <div class="img-box">
+                        <img src="eco bag.png" alt="Eco Bag" id="img-p5">
+                        <button class="slider-btn slider-left" data-id="p5" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p5" data-dir="next">❯</button>
+                    </div>
+                    <div class="info">
+                        <h3>Eco Bag Archive</h3>
+                        <span class="price">Rp 150.000</span>
+                        <div class="rating">★★★★☆ 4.8</div>
+                        <div class="stock-info" id="stock-p5">📦 Stok: 48</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p5">
+                                <option value="Narcissism">Narcissism</option>
+                                <option value="Photo ver">Photo ver</option>
+                            </select>
+                            <input type="number" id="qty-p5" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p5')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p5">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!-- ========== STATIONERY ========== -->
+        <h2 id="stationery" class="section-title">STATIONERY</h2>
+        <div class="grid">
+
+            <!-- p6: Photobook Ver. -->
+            <div class="p-item" data-name="photobook" data-id="p6">
+                <input type="checkbox" id="p6" class="db-check">
+                <label for="p6" class="card">
+                    <div class="img-box">
+                        <img src="photobook.png" alt="Photobook" id="img-p6">
+                        <button class="slider-btn slider-left" data-id="p6" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p6" data-dir="next">❯</button>
+                        <span class="badge-label badge-laris">🔥 Laris</span>
+                    </div>
+                    <div class="info">
+                        <h3>Photobook Ver.</h3>
+                        <span class="price">Rp 350.000</span>
+                        <div class="rating">★★★★★ 5.0</div>
+                        <div class="stock-info" id="stock-p6">📦 Stok: 25</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p6">
+                                <option value="Mark">Mark</option><option value="Renjun">Renjun</option><option value="Jeno">Jeno</option>
+                                <option value="Haechan">Haechan</option><option value="Jaemin">Jaemin</option>
+                                <option value="Chenle">Chenle</option><option value="Jisung">Jisung</option>
+                            </select>
+                            <input type="number" id="qty-p6" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p6')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p6">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+
+            <!-- p7: Poster Set -->
+            <div class="p-item" data-name="poster set" data-id="p7">
+                <input type="checkbox" id="p7" class="db-check">
+                <label for="p7" class="card">
+                    <div class="img-box">
+                        <img src="poster01.png" alt="Poster Set" id="img-p7">
+                        <button class="slider-btn slider-left" data-id="p7" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p7" data-dir="next">❯</button>
+                    </div>
+                    <div class="info">
+                        <h3>Poster Set</h3>
+                        <span class="price">Rp 120.000</span>
+                        <div class="rating">★★★★☆ 4.7</div>
+                        <div class="stock-info" id="stock-p7">📦 Stok: 27</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p7">
+                                <option value="Mark">Mark</option><option value="Renjun">Renjun</option><option value="Jeno">Jeno</option>
+                                <option value="Haechan">Haechan</option><option value="Jaemin">Jaemin</option>
+                                <option value="Chenle">Chenle</option><option value="Jisung">Jisung</option>
+                            </select>
+                            <input type="number" id="qty-p7" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p7')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p7">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!-- ========== COLLECTIBLES ========== -->
+        <h2 id="collect" class="section-title">COLLECTIBLES</h2>
+        <div class="grid">
+
+            <!-- p8: Acrylic Stand -->
+            <div class="p-item" data-name="acrylic stand" data-id="p8">
+                <input type="checkbox" id="p8" class="db-check">
+                <label for="p8" class="card">
+                    <div class="img-box">
+                        <img src="acrylic.png" alt="Acrylic Stand" id="img-p8">
+                        <button class="slider-btn slider-left" data-id="p8" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p8" data-dir="next">❯</button>
+                        <span class="badge-label badge-laris">🔥 Laris</span>
+                    </div>
+                    <div class="info">
+                        <h3>Acrylic Stand</h3>
+                        <span class="price">Rp 285.000</span>
+                        <div class="rating">★★★★★ 4.9</div>
+                        <div class="stock-info" id="stock-p8">📦 Stok: 35</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p8">
+                                <option value="Mark">Mark</option><option value="Renjun">Renjun</option><option value="Jeno">Jeno</option>
+                                <option value="Haechan">Haechan</option><option value="Jaemin">Jaemin</option>
+                                <option value="Chenle">Chenle</option><option value="Jisung">Jisung</option>
+                            </select>
+                            <input type="number" id="qty-p8" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p8')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p8">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+
+            <!-- p9: Visual Keyring -->
+            <div class="p-item" data-name="keyring" data-id="p9">
+                <input type="checkbox" id="p9" class="db-check">
+                <label for="p9" class="card">
+                    <div class="img-box">
+                        <img src="key ring.png" alt="Keyring" id="img-p9">
+                        <button class="slider-btn slider-left" data-id="p9" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p9" data-dir="next">❯</button>
+                    </div>
+                    <div class="info">
+                        <h3>Visual Keyring</h3>
+                        <span class="price">Rp 95.000</span>
+                        <div class="rating">★★★★☆ 4.8</div>
+                        <div class="stock-info" id="stock-p9">📦 Stok: 67</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p9">
+                                <option value="Mark">Mark</option><option value="Renjun">Renjun</option><option value="Jeno">Jeno</option>
+                                <option value="Haechan">Haechan</option><option value="Jaemin">Jaemin</option>
+                                <option value="Chenle">Chenle</option><option value="Jisung">Jisung</option>
+                            </select>
+                            <input type="number" id="qty-p9" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p9')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p9">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+
+            <!-- p10: LED Room Light -->
+            <div class="p-item" data-name="led" data-id="p10">
+                <input type="checkbox" id="p10" class="db-check">
+                <label for="p10" class="card">
+                    <div class="img-box">
+                        <img src="led.png" alt="LED Light" id="img-p10">
+                        <button class="slider-btn slider-left" data-id="p10" data-dir="prev">❮</button>
+                        <button class="slider-btn slider-right" data-id="p10" data-dir="next">❯</button>
+                        <span class="badge-label badge-mahal">💎 Premium</span>
+                    </div>
+                    <div class="info">
+                        <h3>LED Room Light</h3>
+                        <span class="price">Rp 550.000</span>
+                        <div class="rating">★★★★★ 4.9</div>
+                        <div class="stock-info" id="stock-p10">📦 Stok: 10</div>
+                        <div class="qty-row">
+                            <select class="variant-select" id="var-p10">
+                                <option value="Mark">Mark</option><option value="Renjun">Renjun</option><option value="Jeno">Jeno</option>
+                                <option value="Haechan">Haechan</option><option value="Jaemin">Jaemin</option>
+                                <option value="Chenle">Chenle</option><option value="Jisung">Jisung</option>
+                            </select>
+                            <input type="number" id="qty-p10" value="1" min="1" class="qty-input">
+                        </div>
+                        <div class="cart-actions">
+                            <button class="btn-add-cart" onclick="addToCart('p10')">🛒 + Keranjang</button>
+                        </div>
+                        <button class="btn-deskripsi" data-id="p10">📄 Lihat Deskripsi</button>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR KERANJANG -->
+    <div class="sidebar">
+        <div id="status-live" class="status-box">EMPTY CART</div>
+        <div class="form-group">
+            <label>🛒 Order Summary</label>
+            <div id="sidebar-cart-list" class="cart-summary-list">
+                <p style="text-align:center; color:#ccc; padding:20px;">Pilih barang di katalog</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>📦 Courier</label>
+            <select id="in-kurir">
+                <option value="12000">J&T Express - Rp 12.000</option>
+                <option value="10000">SiCepat - Rp 10.000</option>
+                <option value="25000">GoSend - Rp 25.000</option>
+            </select>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-weight:800; border-top:2px solid #eee; padding-top:15px;">
+            <span>TOTAL</span>
+            <span id="total-side" style="color:var(--gold)">Rp 0</span>
+        </div>
+        <button class="btn-checkout" id="checkout-btn">LANJUTKAN KE CHECKOUT</button>
+    </div>
+</div>
+
+<!-- TOAST NOTIFIKASI -->
+<div id="global-toast" class="toast-notif"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
